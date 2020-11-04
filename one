@@ -29,3 +29,91 @@ printf("%d,%d\n",ch1,ch2);
 return 0;
 }
 
+#include <stdio.h>（两数相加）
+int main(){
+    int num1=0;
+    int num2=0;
+    int sum=0;
+    scanf("%d,%d",&num1,&num2);
+    sum=num1+num2;
+    printf("sum=%d\n",sum);
+    return 0;
+}
+
+#include <stdio.h>
+void main(){
+    int a,b,c,d,e;
+    printf("请分别输入四个数:\n");
+    scanf("%d,%d,%d,%d",&a,&b,&c,&d);
+    if(a<b){
+        e=a;
+        a=b;
+        b=e;
+    }
+    if(a<c)
+    {
+        e=a;
+        a=c;
+        c=e;
+    }
+    if(a<d){
+        e=a;
+        a=d;
+        d=e;
+    }
+    if(b<c)
+    {
+        e=b;
+        b=c;
+        c=e;
+    }
+    if(b<d)
+    {
+        e=b;
+        b=d;
+        d=e;
+    }
+    if(c<d)
+    {
+        e=c;
+        c=d;
+        d=e;
+    }
+    printf("按小到大排序:%d,%d,%d,%d\n",a,b,c,d);
+}
+
+#include <stdio.h>(较小所有数)
+float main(){
+      float a,b,c;
+      scanf("%f,%f",&a,&b);
+      if(a<b)
+      c=a;
+      else
+      c=b;
+      printf("%g\n",c);}
+
+#include <stdio.h>
+int min(int a,int b,int c){
+    int sma;
+    sma=a;
+    if(b<sma)
+    sma=b;
+    if(c<sma)
+    sma=c;
+    return sma;
+    }
+(求最小数)
+
+void main(){
+   int x,y,z,s;
+   printf("请你打仨数字:\n");
+   scanf("%d,%d,%d",&x,&y,&z);
+   s=min(x,y,z);
+   printf("最小数为:%d\n",s);
+   }
+
+
+
+
+
+
